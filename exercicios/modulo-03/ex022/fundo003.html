@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posição dos Fundos</title>
+    <style>
+        div.bloco {
+            height: 300px;
+            width: 500px;
+            border: 1px solid black;
+            margin: 10px;
+            border-radius: 10px;
+        }
+        div#bloco1 {
+            background-image: url(imagens/wallpaper003.jpg);
+            background-position: left top;
+        }
+        div#bloco2 {
+            background-image: url(imagens/wallpaper003.jpg);
+            background-position: right bottom;
+        }
+        div#bloco3 {
+            background-image: url(imagens/wallpaper003.jpg);
+            background-position: center top;
+        }
+        div#bloco4 {
+            background-image: url(imagens/wallpaper003.jpg);
+            background-position: center center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Posição de um background</h1>
+
+    <h2>background-position: left top;</h2>
+    <div class="bloco" id="bloco1"></div>
+
+    <h2>background-position: right bottom;</h2>
+    <div class="bloco" id="bloco2"></div>
+
+    <h2>background-position: center top;</h2>
+    <div class="bloco" id="bloco3"></div>
+
+    <h2>background-position: center center;</h2>
+    <div class="bloco" id="bloco4"></div>
+</body>
+</html>
