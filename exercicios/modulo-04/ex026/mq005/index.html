@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Responsivo</title>
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="estilos/media-queries.css">
+</head>
+<body onresize="MudouTamanho()">
+    <header>
+        <h1>Meu Site</h1>
+        <i id="burger" class="material-symbols-outlined" onclick="ClickMenu()">
+            menu
+        </i>
+        <menu id="itens">
+            <ul>
+                <li><a href="#">Opção 1</a></li>
+                <li><a href="#">Opção 2</a></li>
+                <li><a href="#">Opção 3</a></li>
+                <li><a href="#">Opção 4</a></li>
+                <li><a href="#">Opção 5</a></li>
+            </ul>
+        </menu>
+    </header>
+    <main>
+        <article>
+            <h2>Testando Media Queries</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam sit amet numquam mollitia explicabo, nesciunt natus assumenda repudiandae ad eaque odio voluptatem id aliquid neque nobis, tempore quisquam, vitae praesentium. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem est obcaecati, minus odit ducimus tempore perferendis nisi! Neque corrupti, dolor quibusdam, voluptate inventore nesciunt nulla tempora doloremque magni, architecto sed.</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid perspiciatis animi, quam impedit et veritatis consequatur quae odit blanditiis amet dolores eveniet corrupti ipsum eligendi iure non beatae saepe ipsam. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus voluptatum placeat est, reprehenderit at soluta, voluptas tenetur sapiente nobis, nulla perferendis neque accusantium ratione velit provident cupiditate ad accusamus ipsam.</p>
+        </article>
+    </main>
+    <script>
+        function MudouTamanho() {
+            if (window.innerWidth >= 768) {
+                itens.style.display = 'block';
+            } else {
+                itens.style.display = 'none';
+            }
+        }
+        function ClickMenu() {
+            if (itens.style.display == 'none') {
+                itens.style.display = 'block';
+            } else {
+                itens.style.display = 'none';
+            }
+        }
+    </script>
+</body>
+</html>
